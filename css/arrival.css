@@ -1,0 +1,42 @@
+.arrival {
+}
+
+.arrival__list {
+  margin-top: 118px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0 90px;
+}
+.arrival__item {
+}
+.arrival__image {
+  max-width: 484px;
+  height: 704px;
+}
+.arrival__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+  .arrival__list {
+    margin-top: 50px;
+  }
+  .arrival__list {
+    grid-template-columns: 1fr;
+  }
+  .arrival__item {
+    margin: 20px auto;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  .arrival {
+    padding: 0 10px;
+  }
+  .arrival__image {
+    width: auto;
+    height: auto;
+  }
+}
